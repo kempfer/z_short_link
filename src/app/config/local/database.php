@@ -23,9 +23,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'homestead',
-			'username'  => 'homestead',
-			'password'  => 'secret',
+			'database'  => 'z_short_link',
+			'username'  => 'local_short_link',
+			'password'  => 'local_short_link',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -41,6 +41,14 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
+                'mongodb' => array(
+                    'driver'   => 'mongodb',
+                    'host'     => 'localhost',
+                    'port'     => 27017,
+                    'username' => 'username',
+                    'password' => 'password',
+                    'database' => 'database'
+                )
 
 	),
 
