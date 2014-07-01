@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@getIndex');
+
+Route::get('/{short}', 'HomeController@getRedirect');
+
+Route::post('link','RestController@postCreate');
+
+Route::get('link/{short}','RestController@getIndex');

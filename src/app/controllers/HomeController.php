@@ -1,23 +1,28 @@
 <?php
 
-class HomeController extends BaseController {
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
-
-	public function showWelcome()
-	{
-		return View::make('hello');
-	}
-
-}
+/**
+ * Description of HomeController
+ *
+ * @author Kempfer
+ */
+class HomeController extends  Controller  {
+    
+    /**
+     * 
+     */
+    public function getIndex () {
+        echo "adad";exit;
+    }
+    /**
+     * 
+     */
+    public function getRedirect ($short) {
+        //return Redirect::to('https://www.google.com.ua/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=laravel+4+controller+load+model');
+        echo $short;
+    }
+} 
