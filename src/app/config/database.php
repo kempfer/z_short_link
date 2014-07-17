@@ -82,6 +82,13 @@ return array(
 			'password' => '',
 			'prefix'   => '',
 		),
+                'mongodb' => array(
+                    'driver'   => 'mongodb',
+                    'host'     => 'localhost',
+                    'port'     => 27017,
+                    'database' => 'z_short_link'
+  
+		)
 
 	),
 

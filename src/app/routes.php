@@ -11,6 +11,9 @@
 |
 */
 
+
+
+
 Route::get('/', 'HomeController@getIndex');
 
 Route::get('/{short}', 'HomeController@getRedirect');

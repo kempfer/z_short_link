@@ -10,6 +10,8 @@
  *
  * @author Kempfer
  */
+use Jenssegers\Mongodb\Model as Eloquent;
+
 class Link extends Eloquent {
 
     /**
@@ -22,6 +24,6 @@ class Link extends Eloquent {
      *
      * @var string 
      */
-    protected $table = 'links';
+    protected $collection = 'links';
     
 }
