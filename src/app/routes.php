@@ -12,12 +12,17 @@
 */
 
 
+Route::model('user', 'User');
+
+Route::model('apiKey', 'ApiKey');
+Route::model('link', 'Link');
+
 
 
 Route::get('/', 'HomeController@getIndex');
 
 Route::get('/{short}', 'HomeController@getRedirect');
 
-Route::post('link','RestController@postCreate');
+Route::post('/link','RestController@postCreate');
 
 Route::get('link/{short}','RestController@getIndex');

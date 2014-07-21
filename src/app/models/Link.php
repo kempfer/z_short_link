@@ -14,6 +14,12 @@ use Jenssegers\Mongodb\Model as Eloquent;
 
 class Link extends Eloquent {
 
+    
+    public $shortLink;
+    
+    public $longLink;
+    
+    public $time;
     /**
      *
      * @var string
@@ -25,5 +31,7 @@ class Link extends Eloquent {
      * @var string 
      */
     protected $collection = 'links';
+    
+    
     
 }

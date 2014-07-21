@@ -18,7 +18,15 @@ class HomeController extends  Controller  {
      * 
      */
     public function getRedirect ($short) {
-        $a = Link::where('short',$short)->get()->toArray();
-        print_r($a);
+        $link = Link::select('long')->where('short',$short)->pluck('long');
+        if(!empty($link)){
+            return Redirect::to($link);
+        }
+    }
+    /**
+     * 
+     */
+    public function getIndex () {
+        
     }
 } 
