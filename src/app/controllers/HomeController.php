@@ -12,8 +12,24 @@
  */
 class HomeController extends  Controller  {
     
-
+    public $layout = 'site.layouts.default';
     
+    /**
+     * Initializer.
+     *
+     * @access   public
+     * @return \BaseController
+     */
+    public function __construct()
+    {
+        $this->beforeFilter('csrf', array('on' => 'post'));
+    }
+    
+    protected function setupLayout()
+    {
+        if(!is_null($this->layout))
+            $this->layout = View::make($this->layout);
+    }
     /**
      * 
      */
@@ -27,6 +43,6 @@ class HomeController extends  Controller  {
      * 
      */
     public function getIndex () {
-        
+        return View::make('site.home.index');
     }
 } 
