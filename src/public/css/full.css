@@ -17,3 +17,6 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+#main_container {
+    margin-top:100px;
+}

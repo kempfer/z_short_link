@@ -4,13 +4,17 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Full - Start Bootstrap Template</title>
+<title>ZShort - Service shortlinks</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom CSS -->
 <link href="css/full.css" rel="stylesheet">
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

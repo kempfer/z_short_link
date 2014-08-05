@@ -31,6 +31,7 @@ class HomeController extends  Controller  {
             $this->layout = View::make($this->layout);
         }
     }
+    
     /**
      *
      */
