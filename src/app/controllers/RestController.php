@@ -12,13 +12,13 @@
  */
 class RestController extends  Controller {
 
-    
+
     public function __construct(Link $link) {
         $this->link = $link;
     }
 
     /**
-     * 
+     *
      */
     public function postCreate () {
         $longLink = Input::get('long_link');
@@ -28,9 +28,9 @@ class RestController extends  Controller {
         $this->link->save();
     }
     /**
-     * 
+     *
      */
     public function getIndex () {
-        
+
     }
 }
