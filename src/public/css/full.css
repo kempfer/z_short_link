@@ -20,3 +20,18 @@ body {
 #main_container {
     margin-top:100px;
 }
+#response {
+    width: 400px;
+    margin-left: 25%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #eee;
+    background: #FCFCFC;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 18px;
+    display: none;
+}
+#response::selection {
+ background: #B7F3C5; /* Safari */
+}

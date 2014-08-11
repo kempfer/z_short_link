@@ -26,6 +26,8 @@ class RestController extends  Controller {
         $this->link->setAttribute('long',$longLink);
         $this->link->setAttribute('short',$shortLink);
         $this->link->save();
+        $shortUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $shortLink;
+        return Response::json( array('query' => true, 'data' => array('short' => $shortUrl ), 'msg' => null) );
     }
     /**
      *
